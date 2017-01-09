@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>阅读器</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="top-nav" class="top-nav" style="display: none;">
+        <div class="icon-back">
+            <span class="fa fa-angle-left"></span>
+        </div>
+        <div class="nav-title">返回书架</div>
+    </div>
+    <div id="root" class="container">
+        <div class="m-artical-action">
+            <div class="artical-action-mid" id="action_mid"></div>
+        </div>
+        <div id="fiction_chapter_title">
+
+        </div>
+        <div id="fiction_container" class="m-read-content">
+
+        </div>
+        <div class="m-button-bar">
+            <ul class="u-tab">
+                <li id="prev_button">上一章</li>
+                <li id="next_button">下一章</li>
+            </ul>
+        </div>
+
+        <div class="nav-pannel" id="font-container">
+            <div class="child-mod">
+                <span>字号</span>
+                <button id="large-font" class="font-size-button">大</button>
+                <button id="small-font" class="font-size-button">小</button>
+            </div>
+            <div class="child-mod">
+                <span>背景</span>
+                <div id="bg_list" class="bg-list">
+                    <div class="bg-container ">
+
+                    </div>
+                    <div class="bg-container ">
+
+                    </div>
+                    <div class="bg-container">
+
+                    </div>
+                    <div class="bg-container">
+
+                    </div>
+                    <div class="bg-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-nav" id="bottom-nav" style="display: none;">
+        <div class="b-nav-item"><i class="fa fa-list"></i><span>目录</span></div>
+        <div class="b-nav-item font-button"><i class="fa fa-font"></i><span>字体</span></div>
+        <div class="b-nav-item day-button"><i class="fa fa-circle"></i><span>夜间</span></div>
+    </div>
+    <script src="js/lib/zepto.js"></script>
+    <script>
+        window.jQuery = zepto = $;
+    </script>
+    <script src="js/lib/jquery.jsonp.js"></script>
+    <script src="js/lib/jquery.base64.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

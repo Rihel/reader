@@ -1,0 +1,4 @@
+bower_components/
+.vscode/
+dist/
+node_modules/

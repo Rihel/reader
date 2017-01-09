@@ -1,0 +1,178 @@
+@import './_mixin.scss';
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e9dfc7;
+}
+
+.artical-action-mid {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 40%;
+    top: 30%;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+    .icon-back {
+        position: absolute;
+        top: 1.4rem;
+        left: 1rem;
+        width: 2.3rem;
+        height: 2.3rem;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.3rem;
+    }
+    .nav-title {
+        position: absolute;
+        top: 1.6rem;
+        left: 4.2rem;
+    }
+}
+
+.container {
+    .m-read-content {
+        font-size: 1.4rem;
+        color: #555;
+        line-height: 3.1rem;
+        padding: 1.5rem;
+        transition: all 0.4s;
+        h4 {
+            font-size: 2rem;
+            @include border-1(bottom, #736357);
+            letter-spacing: 0.2rem;
+            margin: 0 0 1em 0;
+        }
+        p {
+            text-indent: 2em;
+            margin: 0.5em 0;
+            letter-spacing: 0;
+            line-height: 2.4rem;
+        }
+    }
+    .m-button-bar {
+        box-sizing: border-box;
+        padding: 0 5rem;
+        .u-tab {
+            height: 3.4rem;
+            margin: 1rem auto;
+            line-height: 3.4rem;
+            border-radius: 0.8rem;
+            border: 1px solid #858382;
+            font-size: 1.2rem;
+            background-color: #000;
+            opacity: 0.9;
+            display: flex;
+            li {
+                flex: 1;
+                color: #fff;
+                text-align: center;
+                &:nth-of-type(1) {
+                    @include border-1(right, #858382);
+                }
+            }
+        }
+    }
+    .nav-pannel {
+        display: none;
+        position: fixed;
+        bottom: 5rem;
+        height: 13.5rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .9);
+        z-index: 10000;
+        color: #fff;
+        .child-mod {
+            padding: 0.5rem 1rem;
+            margin: 1.5rem;
+            span {
+                display: inline-block;
+                padding-right: 2rem;
+                padding-left: 1rem;
+            }
+            .font-size-button {
+                background-color: none;
+                border: 1px solid #8c8c8c;
+                color: #fff;
+                border-radius: 1.6rem;
+                padding: 0.5rem 4rem;
+                &:nth-of-type(1) {
+                    margin-right: 1rem;
+                }
+            }
+            .bg-list {
+                display: inline-block;
+                .bg-container {
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: #fff;
+                    border-radius: 1.7rem;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: -14px;
+                    margin-right: 1rem;
+                    padding: 0.2rem;
+                    &:nth-of-type(1) {
+                        background: #f7eee5;
+                    }
+                    &:nth-of-type(2) {
+                        background: #e9dfc7;
+                    }
+                    &:nth-of-type(3) {
+                        background: #a4a4a4;
+                    }
+                    &:nth-of-type(4) {
+                        background: #cdefce;
+                    }
+                    &:nth-of-type(5) {
+                        background: #283548;
+                    }
+                    &.bg-active {
+                        border-radius: 1.8rem;
+                        border: 2px #ff7800 solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottom-nav {
+    position: fixed;
+    padding-top: 1rem;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, .9);
+    bottom: 0;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    display: flex;
+    .b-nav-item {
+        flex: 1;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        i {
+            flex: 1;
+        }
+        span {
+            flex: 1;
+        }
+    }
+}
